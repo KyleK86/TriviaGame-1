@@ -1,0 +1,268 @@
+
+/* Main tag styles */
+/* ====================================================================== */
+body {
+    width: 960px;
+    margin: auto;
+    background: url("../images/cosmosBg.jpg") center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+/* Header Stlyes */
+/* ======================================================================== */
+.headerWrap {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.header {
+    background: #ebebeb;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Intro Styles */
+/* ========================================================================= */
+.introWrap {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 30vh;
+    background: #ebebeb00;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    margin: 1em 0;
+    border-radius: 20px;
+}
+
+#intro {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 2.5px;
+    padding: 1em 0;
+    align-self: center;
+}
+
+
+#instructions {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#startBtn {
+    width: 15%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6em;
+    padding: 0.25em 0;
+    align-self: center;
+    border-radius: 20px;
+    transition: all 0.25s;
+    box-shadow: 0 0 10px 4px rgb(17, 0, 27);
+ }
+
+ #startBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background: rgb(42, 0, 61);
+    color: white;
+    box-shadow: 2px 2px 7px 2px #9e00a3;
+ }
+
+/* Game Styles */
+/* ==================================================================== */
+.gameWrap {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    min-height: 30vh;
+    background: #000000b2;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 2px rgb(255, 255, 255);
+}
+
+#timeLeft {
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+#question {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+.answerChoices {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    padding: 0.25em;
+    width: 30%;
+    margin: auto;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.answerChoices:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background: rgb(42, 0, 61);
+    color: white;
+    box-shadow: 2px 2px 7px 2px #9e00a3;
+}
+
+#gifWrap {
+  display: none;
+}
+
+#gif {
+  width: 40vh;
+  margin: 1em;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgb(180, 180, 180);
+}
+
+/* Results Styles */
+/* =========================================================== */
+.resultsWrap {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  min-height: 30vh;
+  background: #000000b2;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 2px rgb(255, 255, 255);
+}
+
+#results h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4em;
+  padding: 0.5em;
+}
+
+#results h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+#results p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  padding: 0.25em;
+  width: 30%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+#retryBtn {
+  width: 20%;
+  margin: 1em auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  padding: 0.25em 0;
+  align-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgb(175, 175, 175);
+}
+
+#retryBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: rgb(42, 0, 61);
+  color: white;
+  box-shadow: 2px 2px 7px 2px #9e00a3;
+}
+
+/* Cosmos Title Text Effect */
+/* ============================================================= */
+h1 {
+  margin: 6em 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2em;
+  z-index: -1;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  border: 1.3vmin solid white;
+  box-sizing: border-box;
+}
+
+em {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 4em;
+  font-style: normal;
+  width: 1.1em;
+  text-align: center;
+}
+
+em.planet {
+  -webkit-animation: planet-rotate 8s linear infinite;
+  animation: planet-rotate 8s linear infinite;
+  position: relative;
+}
+
+em.planet::before {
+  content: "";
+  position: absolute;
+  top: 0.05em;
+  left: 10px;
+  z-index: -1;
+  width: 0.8em;
+  height: 0.85em;
+  border-radius: 50%;
+  background: rgb(32, 0, 51);
+}
+
+em.planet.left {
+  -webkit-transform-origin: 2.2em;
+  transform-origin: 2.2em;
+}
+
+em.planet.right {
+  -webkit-transform-origin: -1.1em;
+  transform-origin: -1.1em;
+}
+
+@-webkit-keyframes planet-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}

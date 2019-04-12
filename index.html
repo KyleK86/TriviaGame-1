@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Karla|Ubuntu:500" rel="stylesheet">
+    <!-- Reset Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Personal Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Cosmos Trivia</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="headerWrap">
+            <h1>
+                <em>C</em>
+                <em class="planet left">O</em>
+                <em>S</em>
+                <em>M</em>
+                <em class="planet right">O</em>
+                <em>S</em>
+            </h1>
+        </div>
+
+        <div class="introWrap">
+            <div id="intro">
+                <h2>Welcome to Cosmos Trivia!</h2>
+            </div>
+            <div id="instructions">
+                <p>Here you will test your interstellar intellect.</p>
+                <p>You will have 30 seconds to answer each question.</p>
+                <p>Good Luck!</p>
+            </div>
+            <div id="startBtn">Play</div>
+        </div>
+
+        <div class="gameWrap" style="display: none">
+            <div id="timeLeft"></div>
+            <div id="question"></div>
+            <div id="answers"></div>
+            <div id="gifWrap">
+                <img id="gif" src="" alt="Cosmos Gif">
+            </div>
+        </div>
+
+        <div class="resultsWrap" style="display: none">
+            <div id="results"></div>
+            <div id="retryBtn">Try Again?</div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
