@@ -8,6 +8,10 @@ body {
     background-size: cover;
 }
 
+strong {
+  font-weight: 600;
+  color: #fedaff;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -38,7 +42,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     min-height: 30vh;
     background: #ebebeb00;
-    color: white;
+    color: #fedaff;
     text-align: center;
     line-height: 2em;
     margin: 1em 0;
@@ -66,6 +70,8 @@ body {
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.6em;
+    background: #9e00a365;
+    color: #fedaff;
     padding: 0.25em 0;
     align-self: center;
     border-radius: 20px;
@@ -77,7 +83,7 @@ body {
     cursor: pointer;
     transform: scale(1.05);
     background: rgb(42, 0, 61);
-    color: white;
+    color: #fedaff;
     box-shadow: 2px 2px 7px 2px #9e00a3;
  }
 
@@ -93,9 +99,9 @@ body {
     line-height: 1.6em;
     text-align: center;
     padding: 1em;
-    margin: 1em 0;
+    margin: 2em 0 5em 0;
     border-radius: 20px;
-    box-shadow: 0 0 15px 2px rgb(255, 255, 255);
+    box-shadow: 0 0 15px 2px #fedaff
 }
 
 #timeLeft {
@@ -103,6 +109,10 @@ body {
   font-size: 1em;
   font-weight: 600;
   padding: 0.5em;
+}
+
+#timer {
+  color: orange;
 }
 
 #question {
@@ -125,8 +135,14 @@ body {
     cursor: pointer;
     transform: scale(1.02);
     background: rgb(42, 0, 61);
-    color: white;
+    color: #fedaff;
     box-shadow: 2px 2px 7px 2px #9e00a3;
+}
+
+#answers{
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  padding: 0.25em;
 }
 
 #gifWrap {
@@ -134,7 +150,8 @@ body {
 }
 
 #gif {
-  width: 40vh;
+  width: 30vh;
+  max-height: 30vh;
   margin: 1em;
   border-radius: 20px;
   box-shadow: 0 0 10px 1px rgb(180, 180, 180);
@@ -160,6 +177,7 @@ body {
 #results h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.4em;
+  color: #fedaff;
   padding: 0.5em;
 }
 
@@ -176,6 +194,21 @@ body {
   width: 30%;
   margin: auto;
   border-radius: 20px;
+}
+
+#correctText,
+#correctCount {
+  color: rgb(0, 167, 0);
+}
+
+#wrongText,
+#wrongCount {
+  color: red;
+}
+
+#skippedText,
+#skippedCount {
+  color: orange;
 }
 
 #retryBtn {
@@ -214,13 +247,13 @@ h1::before {
   width: 14em;
   height: 14em;
   border-radius: 50%;
-  border: 1.3vmin solid white;
+  border: 1.3vmin solid #fedaff;
   box-sizing: border-box;
 }
 
 em {
   font-family: 'Josefin Sans', sans-serif;
-  color: white;
+  color: #fedaff;
   font-size: 4em;
   font-style: normal;
   width: 1.1em;
