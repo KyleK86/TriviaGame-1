@@ -104,7 +104,7 @@ var countDown = () => {
     timer--;
 
     // If timer hits 0 and there ARE questions remaining, run this logic
-    if (timer === -1) {
+    if (timer < 0) {
         skippedCount++;
         stopTimer();
         displayGif();
@@ -112,7 +112,7 @@ var countDown = () => {
         answerCheck();
     }
     // If timer hits 0 and there are NO questions remaining, run this logic
-    if (timer === -1 && (correctCount + wrongCount + skippedCount) === maxCount) {
+    if (timer < 0 && (correctCount + wrongCount + skippedCount) === maxCount) {
         isDone = true;
         displayResults();
         answerCheck();
@@ -227,6 +227,7 @@ $("#startBtn").on("click", function () {
     // Hide intro and display game
     $(".introWrap").css("display", "none");
     $(".gameWrap").css("display", "grid");
+    // Push the "questions" array into a new array, to store data for restart
     for(var i = 0; i < questions.length; i++) {
         newArray.push(questions[i]);
     }
